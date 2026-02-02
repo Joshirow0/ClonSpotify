@@ -6,26 +6,128 @@
     <title>Spotify - Web Clon</title>
     <link rel="icon" type="image/png" href="assets/img/favicon-spotify.png">
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <div class="container-spotify">
+        <header class="nav-bar">
+            <div class="header-logo">
+                <i class="fab fa-spotify"></i>
+            </div>
 
-    </header>
+            <div class="search-nav">
+                <button class="circle-btn-dark"><i class="fas fa-home"></i></button>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="What do you want to play?">
+                    <i class="fas fa-columns"></i> </div>
+            </div>
 
-    <aside>
+            <div class="auth-buttons">
+                <a href="https://www.spotify.com/mx/premium/">Premium</a>
+                <a href="https://support.spotify.com/mx/">Support</a>
+                <a href="https://www.spotify.com/mx/download/windows/">Download</a>
+                <div class="separator-bar"></div>
+                <button class="btn-text-gray">Sign up</button>
+                <button class="btn-pill-white">Log in</button>
+            </div>
+        </header>
 
-    </aside>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Your Library</h1>
+                <button class="icon-btn btn-pill-black"><i class="fas fa-plus"></i>Create</button>
+            </div>
 
-    <main>
-        
+            <div class="sidebar-scroll">
+                <div class="track-card">
+                    <h2>Create your first playlist</h2>
+                    <p>It's easy, we'll help you</p>
+                    <button class="btn-pill-small">Create playlist</button>
+                </div>
 
-        <footer>
+                <div class="track-card">
+                    <h2>Let's find some podcasts to follow</h2>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button class="btn-pill-small">Browse podcasts</button>
+                </div>
+            </div>
 
-        </footer>
-    </main>
+            <div class="sidebar-footer">
+                <ul class="legal-links">
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Safety & Privacy Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">About Ads</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+                <button class="btn-outline-globe"><i class="fas fa-globe"></i> English</button>
+            </div>
+        </aside>
 
-    <footer>
+        <main class="main-content">
+            <div class="content-scroll-area">
 
+                <section class="music-section">
+                    <div class="music-section-header">
+                        <h2>Trending songs</h2>
+                        <a href="#">Show all</a>
+                    </div>
+
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2737a1a6b0c6e0c6e0c6e0c6e0c" alt="Album Cover">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Lamberto Quintero</h3>
+                            <p>Antonio Aguilar</p>
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <section class="music-section">
+                    <div class="music-section-header">
+                        <h2>Popular artists</h2>
+                        <a href="#">Show all</a>
+                    </div>
+
+                    <div class="cards-grid">
+                        <div class="artist-card">
+                            <div class="card-image">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2737a1a6b0c6e0c6e0c6e0c6e0c" alt="Album Cover">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                            <h3>Bad Bunny</h3>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </section>
+                <footer class="internal-footer">
+                    <hr class="footer-separator">
+                    <div class="footer-links-container">
+                        
+                        <div class="link-column">
+
+                        </div>
+
+                    </div>
+                    <hr class="footer-separator">
+                    <p class="copyright">&copy; 2026 Spotify AB</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <footer class="preview-banner">
+        <div class="banner-text">
+            <h4>Preview of Spotify</h4>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+        </div>
+        <button class="btn-pill-white">Sign up free</button>
     </footer>
 
 </body>
