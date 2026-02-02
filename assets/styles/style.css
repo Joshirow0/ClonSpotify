@@ -327,54 +327,7 @@ body {
     text-decoration: underline;
 }
 
-.carousel-container {
-    display: flex;
-    gap: 24px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 20px;
-    
-    scrollbar-width: none;
-}
-
-.carousel-container::-webkit-scrollbar {
-    display: none;
-}
-
-.carousel-container .card {
-    min-width: calc(var(--card-width-num) * 1px);
-    max-width: calc(var(--card-width-num) * 1px); /* Fix of lack of content, the card size is huge due to .card{width:100%}*/
-    scroll-snap-align: start;
-}
-
-/* -----------------------------------  Control 1 */
-.carousel-controls {
-    display: flex;
-    gap: 10px;
-}
-
-.control-btn {
-    background-color: transparent; /* O gris oscuro #1f1f1f si prefieres */
-    color: var(--text-gray);
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    text-decoration: none; /* Quita el subrayado del link */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-.control-btn:hover {
-    background-color: #2a2a2a;
-    color: white;
-}
-
-/* -----------------------------------  Control 2 */
+/* -----------------------------------  Control 2.0 */
 .carousel-wrapper {
     position: relative;
     width: 100%;
@@ -386,7 +339,7 @@ body {
     overflow-x: auto;
     
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory; /* Obliga a detenerse en una tarjeta */
+    scroll-snap-type: x mandatory;
     
     padding-bottom: 10px;
     scrollbar-width: none;
@@ -397,12 +350,10 @@ body {
 }
 
 .carousel-scroll .card {
-    min-width: calc(var(--card-width-num) * 1px);
-    width: calc(var(--card-width-num) * 1px);
+    min-width: var(--card-px);
+    width: var(--card-px);
     
-    scroll-snap-align: start; 
-    
-    flex-shrink: 0;
+    flex-shrink: 0; /* Deny shrinking */
 }
 
 .nav-btn {
