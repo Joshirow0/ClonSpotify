@@ -196,7 +196,7 @@ body {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Para que lo de adentro scrollee si es necesario */
+    overflow: hidden;
 }
 
 .sidebar-header {
@@ -274,8 +274,6 @@ body {
     border-color: white;
     background-color: #2a2a2a;
 }
-
-
 
 /* -------------------- Main Content Area -------------------- */
 
@@ -656,9 +654,12 @@ body {
     border: none;
     padding: 6px 16px;
     border-radius: 500px;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1rem;
     cursor: pointer;
+}
+.btn-pill-black i {
+    margin-right: 8px;
 }
 .btn-pill-black:hover {
     background-color: #282828;
